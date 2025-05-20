@@ -1,0 +1,215 @@
+/* General page styles */
+body {
+    background-color: #fffbea; /* light cream */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: transparent;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  
+  /* Header title */
+  header h1 {
+    font-family: 'Dancing Script', cursive; /* elegant cursive font */
+    font-weight: 300; /* thin-line effect */
+    font-size: 3rem;
+    color: #f4a6b2; /* light pink */
+    margin: 0;
+  }
+  
+  /* Optional nav styling (if needed) */
+  nav a {
+    color: #f4a6b2;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+  
+  /* About Me section */
+section {
+    background-color: #fffaf5; /* soft cream */
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 3rem auto;
+    border: 2px solid #f4a6b2; /* light pink border */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(244, 166, 178, 0.1);
+  }
+  
+  section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #6d123f; /* deeper pink */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f4a6b2;
+    padding-bottom: 0.5rem;
+  }
+  
+  section p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Flex layout for About section */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffaf5;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    border: 2px solid #f4a6b2;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(244, 166, 178, 0.1);
+    gap: 2rem;
+  }
+  
+  /* Text side */
+  .about-text {
+    flex: 1 1 400px;
+  }
+  
+  /* Image side */
+  .about-image img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Title */
+  .about-text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #6d123f;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f4a6b2;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Paragraphs */
+  .about-text p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  /* Contact Section */
+.contact-container {
+    background-color: #fffaf5;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 3rem auto;
+    border: 2px solid #f4a6b2;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(244, 166, 178, 0.1);
+  }
+  
+  .contact-container h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #6d123f;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-container p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .contact-links li a {
+    font-size: 1.1rem;
+    color: #6d123f;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-links li a:hover {
+    border-bottom: 1px solid #f2789f;
+  }
+  
+  /* Testimonials Carousel */
+.testimonials-container {
+    background-color: #fffaf5;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 3rem auto;
+    border: 2px solid #f2789f;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(244, 166, 178, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .testimonials-container h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #6d123f;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial-carousel {
+    position: relative;
+    height: 180px; /* Adjust based on your content */
+  }
+  
+  .testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    padding: 1.5rem;
+    font-style: italic;
+    background-color: #fff;
+    border-left: 4px solid #f4a6b2;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .testimonial.active {
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 1;
+  }
+  
+  .testimonial span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #6d123f;
+    font-style: normal;
+  }
+  
